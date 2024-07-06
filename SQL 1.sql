@@ -79,10 +79,10 @@ create table [Employee Title]
 	    values (3,'lead','2016-06-11')
 		select * from [Employee Title]
 
---1 Display the ìFIRST_NAMEî from Employee table using the alias name as Employee_name.
+--1 Display the ‚ÄúFIRST_NAME‚Äù from Employee table using the alias name as Employee_name.
 
      select First_Name as Employee_name from EMPLOYEE;
---2 Display ìLAST_NAMEî from Employee table in upper case.
+--2 Display ‚ÄúLAST_NAME‚Äù from Employee table in upper case.
 
       select UPPER(Last_Name) as last_name from EMPLOYEE;
 --3 Display unique values of DEPARTMENT from EMPLOYEE table.
@@ -106,13 +106,13 @@ create table [Employee Title]
     
 	 select * from EMPLOYEE
 	  order by First_Name asc,Department desc;
---9 Display details for EMPLOYEE with the first name as ìVEENAî and ìKARANî from EMPLOYEE table.
+--9 Display details for EMPLOYEE with the first name as ‚ÄúVEENA‚Äù and ‚ÄúKARAN‚Äù from EMPLOYEE table.
 
         select * from EMPLOYEE where First_Name = 'VEENA' or First_Name ='KARAN' 
---10 Display details of EMPLOYEE with DEPARTMENT name as ìAdminî.
+--10 Display details of EMPLOYEE with DEPARTMENT name as ‚ÄúAdmin‚Äù.
    
       select * from EMPLOYEE where Department = 'Admin'
---11 DISPLAY details of the EMPLOYEES whose FIRST_NAME contains ëVí.
+--11 DISPLAY details of the EMPLOYEES whose FIRST_NAME contains ‚ÄòV‚Äô.
 
          select * from EMPLOYEE where First_Name like 'V%' 
 --12 DISPLAY details of the EMPLOYEES whose SALARY lies between 100000 and 500000.
